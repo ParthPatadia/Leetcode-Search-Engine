@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  
+  <body>
+    <h1 class="title">LeetCode Search Engine</h1> <!-- Add the title -->
+    <div class="form">
+      <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.search(placeholder='Enter your search term') }} <!-- Add placeholder attribute -->
+        {{ form.submit() }}
+      </form>
+    </div>
+    
+    <div class="results-container">
+      <div class="result-boxes">
+        {% for result in results %}
+        <div class="result-box">
+          <a href="{{ result['Question Link'] }}">{{ result['Question Link'] }}</a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    
+    
+  </body>
+</html>
