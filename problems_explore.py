@@ -24,7 +24,7 @@ QDATA_FOLDER = "Qdata"
 def get_array_of_links():
     arr = []  # Array to store the lines of the file
 # Open the file
-    with open("E:\Algozenith\AZ Hackathon\lc_problems.txt", "r") as file:
+    with open("lc_problems.txt", "r") as file:
         # Read each line one by one
         for line in file:
             arr.append(line)
