@@ -8,7 +8,7 @@ def find_encoding(fname):
     charenc = result['encoding']
     return charenc
 
-filename = 'E:\Algozenith\AZ Hackathon\index.txt'
+filename = 'index.txt'
 my_encoding = find_encoding(filename)
 
 with open(filename, 'r', encoding=my_encoding) as f:
@@ -40,17 +40,17 @@ print('Size of vocab: ', len(vocab))
 print('Sample document: ', documents[0])
 
 # save the vocab in a text file
-with open('E:\\Algozenith\\AZ Hackathon\\vocab.txt', 'w') as f:
+with open('vocab.txt', 'w') as f:
     for key in vocab.keys():
         f.write("%s\n" % key)
 
 # save the idf values in a text file
-with open('E:\Algozenith\AZ Hackathon\idf-values.txt', 'w') as f:
+with open('idf-values.txt', 'w') as f:
     for key in vocab.keys():
         f.write("%s\n" % vocab[key])
 
 # save the documents in a text file
-with open('E:\Algozenith\AZ Hackathon\documents.txt', 'w') as f:
+with open('documents.txt', 'w') as f:
     for document in documents:
         f.write("%s\n" % ' '.join(document))
 
@@ -64,7 +64,7 @@ for index, document in enumerate(documents):
             inverted_index[token].append(index)
 
 # save the inverted index in a text file
-with open('E:\Algozenith\AZ Hackathon\inverted-index.txt', 'w') as f:
+with open('inverted-index.txt', 'w') as f:
     for key in inverted_index.keys():
         f.write("%s\n" % key)
         f.write("%s\n" % ' '.join([str(doc_id) for doc_id in inverted_index[key]]))
