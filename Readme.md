@@ -37,6 +37,8 @@ Selenium is used for automating web browsers. It utilizes web drivers as a bridg
 ### Beautiful Soup
 Beautiful Soup is a Python library for web scraping data from HTML and XML documents. It creates a parse tree from HTML, enabling navigation and data extraction using Pythonic idioms.
 
+## Preprocessing
+
 ### LC.py
 LC.py extracts links to problems using Selenium and Beautiful Soup.
 
