@@ -6,7 +6,7 @@ The LeetCode Search Engine project aims to create a search engine for LeetCode p
 
 ## TF-IDF Algorithm
 
-TF-IDF (Term Frequency-Inverse Document Frequency) is an algorithm used in search engines to measure the relevance of a word or phrase to a particular document. It considers two factors: how frequently the word appears in the document (TF) and how important it is compared to other documents (IDF). The algorithm helps determine the significance of a term within a document collection, enabling the search engine to retrieve and rank relevant documents based on their content.
+TF-IDF (Term Frequency-Inverse Document Frequency) is an algorithm used in search engines to measure the relevance of a word or phrase to a particular document. It considers two factor: how frequently the word appears in the document (TF) and how important it is compared to other documents (IDF). The algorithm helps determine the significance of a term within a document collection, enabling the search engine to retrieve and rank relevant documents based on their content.
 
 ### TF-IDF Formula
 $` TF-IDF(t, d) = TF(t, d) \times IDF(t) `$
@@ -42,7 +42,7 @@ Beautiful Soup is a Python library for web scraping data from HTML and XML docum
 ### LC.py
 LC.py extracts links to problems using Selenium and Beautiful Soup.
 
-1. Required packages.
+1. Import required packages.
 2. Define Chrome driver service and instantiate the web driver.
 3. Define base URL and function to get `a` tags.
 4. Loop through pages and gather links.
@@ -81,7 +81,7 @@ Prepare.py creates a dictionary.
 6. Save vocabulary, IDF values, and documents to text files.
 7. Create the inverted index.
 
-Overall, Prepare.py is a data preparation pipeline for a basic search engine or information retrieval system.
+Overall, Prepare.py is a data preparation pipeline for a basic search engine or information retrieval system. It preprocesses the text, builds vocabulary, calculates IDF values and constructs the inverted index for efficient retrieval of documents containing specific terms.
 
 ## App.py - Testing
 
